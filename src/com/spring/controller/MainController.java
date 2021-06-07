@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
@@ -24,12 +25,44 @@ public class MainController {
 		return "login";
 	}
 
+//	@RequestMapping("loginProcess")
+//	public String loginProcess(HttpServletRequest req, Model model) {
+//		String user = "(Username = "+req.getParameter("user").toUpperCase() + " )";
+//		String pass = "(Passworrd = "+ req.getParameter("pass").toUpperCase() + " )";
+//		model.addAttribute("newUserName", user);
+//		model.addAttribute("newPassword", pass);
+//		return "main";
+//	}
+	
 	@RequestMapping("loginProcess")
-	public String loginProcess(HttpServletRequest req, Model model) {
-		String user = "(Username = "+req.getParameter("user").toUpperCase() + " )";
-		String pass = "(Passworrd = "+ req.getParameter("pass").toUpperCase() + " )";
-		model.addAttribute("newUserName", user);
-		model.addAttribute("newPassword", pass);
+	public String loginProcess(@RequestParam("user") String username, @RequestParam("pass") String password, Model model) {
+	
+		model.addAttribute("newUserName",  "(Username = " +username.toUpperCase()+ " )");
+		model.addAttribute("newPassword", "Password = " +password.toUpperCase()+ " )");
 		return "main";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
