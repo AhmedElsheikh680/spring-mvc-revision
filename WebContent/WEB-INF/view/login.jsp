@@ -7,7 +7,7 @@
 <title>Login</title>
 </head>
 <body>
-	<form action="loginProcess">
+	<form action="loginProcess" method="post">
 		<input type="text" name="user" placehlder="Username"/>
 		<input type="password" name="pass" placeholder="password" />
 		<input type="submit" value="Done" />
