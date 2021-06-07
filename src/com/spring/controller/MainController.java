@@ -10,5 +10,10 @@ public class MainController {
 	public String main() {
 		return "main-page";
 	}
+	
+	@RequestMapping("/profile")
+	public String profile() {
+		return "profile";
+	}
 
 }
