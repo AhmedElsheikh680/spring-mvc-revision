@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="windows-1256">
-<title>Insert title here</title>
+<title>Main</title>
 </head>
 <body>
-	<h1>Hello World Again</h1>
-	<a href="login">Login</a>
+	<h1>HI</h1>
+	<h2>UserName: ${param.user}</h2>
+	<h2>Password: ${param.pass }</h2>
 </body>
 </html>
