@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="windows-1256">
-<title>Insert title here</title>
+<title>Show Data</title>
 </head>
 <body>
-	<h1>Hello World Again</h1>
-	 <a href="login">Login</a><br>
-	<a href="student/loginUser">Student Login</a>
+	<h2>First Name: ${myStudent.fName }</h2>
+	<h2>Last Name: ${myStudent.lName }</h2>
+	<h2> Age: ${myStudent.age }</h2>
 </body>
 </html>
