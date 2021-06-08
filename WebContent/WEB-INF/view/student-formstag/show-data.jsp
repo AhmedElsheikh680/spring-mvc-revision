@@ -11,6 +11,7 @@
 	<h3>FirstName: ${myStudent.fName }</h3>
 	<h3>LastName: ${ myStudent.lName}</h3>
 	<h3>Age: ${ myStudent.age}</h3>
+	<h3>Country: ${myStudent.country}</h3>
 	
 </body>
 </html>

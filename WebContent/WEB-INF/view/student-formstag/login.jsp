@@ -9,10 +9,18 @@
 </head>
 <body>
 	<form:form action="processLogin" modelAttribute="myStudent">
-		<form:input path="fName" placeholder="First Name"/>
-		<form:input path="lName" placeholder="Last Name" />
-		<form:input path="age" placeholder="Age"/>
-		<input type="submit" value="Done" />
+		FirstName: <form:input path="fName" placeholder="First Name"/><br>
+		LastName: <form:input path="lName" placeholder="Last Name" /><br>
+		Age:<form:input path="age" placeholder="Age"/><br>
+		Country: <form:select path="country">
+			<option value="Egypt" label="Eg" />
+			<option value="Giza" label="Gi"/>
+			<option value="Mansoura" label="Ma" />
+		</form:select><br>
+		
+		
+		<br><input type="submit" value="Done" />
+		
 	</form:form>
 </body>
 </html>

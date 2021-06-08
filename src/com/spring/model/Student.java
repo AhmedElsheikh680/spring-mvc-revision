@@ -6,6 +6,7 @@ public class Student {
 	private String fName;
 	private String lName;
 	private String age;
+	private String country;
 	
 	public Student() {
 		super();
@@ -28,5 +29,12 @@ public class Student {
 	public void setAge(String age) {
 		this.age = age;
 	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	
 	
 }
