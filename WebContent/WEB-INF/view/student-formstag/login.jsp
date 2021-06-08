@@ -6,7 +6,7 @@
 <head>
 <meta charset="windows-1256">
 <title>Login</title>
-</head>
+</head>	
 <body>
 	<form:form action="processLogin" modelAttribute="myStudent">
 		FirstName: <form:input path="fName" placeholder="First Name"/><br>
@@ -15,6 +15,10 @@
 		Country: <form:select path="country">
 		<form:options items="${myStudent.countryOptions }"/>
 		</form:select><br>
+		Choose Your Lang:<br>
+		<form:radiobutton path="lang" value="Java" />Java<br>
+		<form:radiobutton path="lang" value="PHP"/>PHP<br>
+		<form:radiobutton path="lang" value="JavaScript"/>JavaScript<br>
 		
 		
 		<br><input type="submit" value="Done" />

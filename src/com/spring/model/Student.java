@@ -12,6 +12,7 @@ public class Student {
 	private String country;
 	private HashMap<String, String> countryOptions;
 	
+	private String lang;
 	public Student() {
 		countryOptions = new HashMap<>();
 		countryOptions.put("Egypt", "EG");
@@ -49,6 +50,13 @@ public class Student {
 	public void setCountryOptions(HashMap<String, String> countryOptions) {
 		this.countryOptions = countryOptions;
 	}
+	public String getLang() {
+		return lang;
+	}
+	public void setLang(String lang) {
+		this.lang = lang;
+	}
+	
 	
 	
 }
