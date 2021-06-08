@@ -29,7 +29,11 @@
 		
 	</bean>-->
 
-
+	<bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource">
+		
+		<property value="resources/application" name="basenames"/>
+		
+	</bean>
 
 
 

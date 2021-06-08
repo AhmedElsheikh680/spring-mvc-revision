@@ -12,7 +12,8 @@
 	<h3>FirstName: ${myStudent.fName }</h3>
 	<h3>LastName: ${ myStudent.lName}</h3>
 	<h3>Age: ${ myStudent.age}</h3>
-	
+	<h3>Email: ${myStudent.email }</h3>
+	<h3>Code: ${myStudent.code }</h3>
 	<h3>Country: ${myStudent.country}</h3>
 	
 	<h3>Lang: ${ myStudent.lang}</h3>
