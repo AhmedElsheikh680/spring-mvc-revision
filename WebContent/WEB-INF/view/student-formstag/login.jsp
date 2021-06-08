@@ -13,9 +13,7 @@
 		LastName: <form:input path="lName" placeholder="Last Name" /><br>
 		Age:<form:input path="age" placeholder="Age"/><br>
 		Country: <form:select path="country">
-			<option value="Egypt" label="Eg" />
-			<option value="Giza" label="Gi"/>
-			<option value="Mansoura" label="Ma" />
+		<form:options items="${myStudent.countryOptions }"/>
 		</form:select><br>
 		
 		
