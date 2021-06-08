@@ -9,6 +9,7 @@
 <body>
 	<h1>Hello World Again</h1>
 	 <a href="login">Login</a><br>
-	<a href="student/loginUser">Student Login</a>
+	<a href="student/loginUser">Student Login</a><br>
+	<a href="studentformstag/login">Student Login With Mvc Tags</a>
 </body>
 </html>
