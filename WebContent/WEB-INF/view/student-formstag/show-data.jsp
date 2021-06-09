@@ -14,6 +14,7 @@
 	<h3>Age: ${ myStudent.age}</h3>
 	<h3>Email: ${myStudent.email }</h3>
 	<h3>Code: ${myStudent.code }</h3>
+	<h3>COdeCountry: ${myStudent.indexCountry }</h3>
 	<h3>Country: ${myStudent.country}</h3>
 	
 	<h3>Lang: ${ myStudent.lang}</h3>

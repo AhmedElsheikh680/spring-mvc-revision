@@ -10,6 +10,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
+import com.spring.validation.VertyCode;
+
 public class Student {
 
 	@NotNull(message = "Required")
@@ -33,6 +35,10 @@ public class Student {
 	
 	@NotNull(message="Required")
 	private Integer code;
+	
+	@NotNull(message="Required")
+	@VertyCode
+	private String indexCountry;
 	
 	private String country;
 	private HashMap<String, String> countryOptions;
@@ -100,6 +106,12 @@ public class Student {
 	}
 	public void setCode(Integer code) {
 		this.code = code;
+	}
+	public String getIndexCountry() {
+		return indexCountry;
+	}
+	public void setIndexCountry(String indexCountry) {
+		this.indexCountry = indexCountry;
 	}
 	
 	

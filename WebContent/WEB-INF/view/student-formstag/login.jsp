@@ -29,6 +29,8 @@
 		
 		Code: <form:input path="code" placeholder="Code"/><br>
 		<form:errors path="code" cssClass="error"/><br>
+		CodeCountry: <form:input path="indexCountry"/><br>
+		<form:errors path="indexCountry"  cssClass="error"/><br>
 		
 		Country: <form:select path="country">
 		<form:options items="${myStudent.countryOptions }"/>
